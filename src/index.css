@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap');
+
+body{
+   margin: 0;
+   font-family:'Montserrat', sans-serif ;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+h1,h2,h3,h4,h5,h6{
+   font-family: 'Bebas Neue', cursive;
+   letter-spacing: 2px;
+}
+
+p, a{
+   font-family: 'Montserrat', sans-serif;
+}
+
+.swiper-button-next, .swiper-button-prev{
+   top:95%!important;
+   bottom: 0 !important;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   position: absolute;
+  
+   width: 25px!important;
+   height: 25px!important;
+   padding: 20px;
+}
+
+
+.swiper-button-next{
+   right: 40%!important;
+   transform:translate(-50%,0) ;
+   -webkit-transform:translate(-50%,0) ;
+   -moz-transform:translate(-50%,0) ;
+   -ms-transform:translate(-50%,0) ;
+   -o-transform:translate(-50%,0) ;
+   background: red;
+}
+.swiper-button-prev{
+   left: 40%!important;
+   transform: translate(-50%, 0);
+   -webkit-transform: translate(-50%, 0);
+   -moz-transform: translate(-50%, 0);
+   -ms-transform: translate(-50%, 0);
+   -o-transform: translate(-50%, 0);
+   background:blue;
+}
+
+.swiper-button-prev::after{
+   font-size: 15px!important; 
+   font-weight: 900;
+   color: white;
+}
+.swiper-button-next::after{
+   font-size: 15px!important; 
+   font-weight: 900;
+   color: white; 
+}
+@media screen and (min-width: 0px) and (max-width: 578px) {
+   .swiper-button-next{
+      right: 35%!important;
+      transform:translate(-30%,0) ;
+      -webkit-transform:translate(-30%,0) ;
+      -moz-transform:translate(-30%,0) ;
+      -ms-transform:translate(-30%,0) ;
+      -o-transform:translate(-30%,0) ;
+      background: red;
+}
+   .swiper-button-prev{
+      left: 35%!important;
+      transform: translate(-30%, 0);
+      -webkit-transform: translate(-30%, 0);
+      -moz-transform: translate(-30%, 0);
+      -ms-transform: translate(-30%, 0);
+      -o-transform: translate(-30%, 0);
+      background:blue;
+
+}
+}
+.herobg{
+   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../public/img/homePageHero.jpg) no-repeat;
+   background-size: cover;
+   background-position: center center;
+   
+}
+
+
+.form-header{
+   font-family: 'Montserrat', sans-serif;
+}
