@@ -1,9 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 const SinglePlaces = ({place}) => {
    const { name, id ,photoUrl,details} = place; 
    return (
       <div className="w-full h-80 border-2 rounded-md border-white relative" >
+         <Helmet>
+            <title>
+               {name} - Traveling Bangladesh
+            </title>
+         </Helmet>
          <div className=' absolute w-full z-20 bottom-0 left-0 h-32 transition-all duration-500 hover:h-full flex items-center  justify-center rounded-md' style={{background: 'rgba(0, 0, 0, 0.612)'}}>
                <div className='w-full'>
                      <h3 className='text-white text-center text-base'>{name}</h3>

@@ -6,15 +6,21 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { useLoaderData } from 'react-router-dom';
 import SinglePlaces from '../Others/SinglePlaces/SinglePlaces';
-import {FaSearch} from 'react-icons/fa'
+import { Helmet } from 'react-helmet-async';
 const Home = () => {
    const [places, setPlaces] = useState(useLoaderData()); 
    console.log(places); 
 
+ 
+   
+
    return (
          <div className='flex items-center justify-around h-screen p-5 gap-5 herobg'>
+            <Helmet>
+                <title>Home - Traveling Bangladesh </title>
+            </Helmet>
             <div className='w-2/5 space-y-4'>  
-                     <h2 className=' text-white text-5xl font-bold text-center text-orange-500 ' >Travel Bd</h2>
+                     <h2 className=' text-white text-5xl font-bold text-center' >Travel Bd</h2>
                   <p className='text-xl text-white text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid, in exercitationem incidunt ut voluptate eum tempore ea hic adipisci alias impedit molestiae repellendus possimus!</p>
                   <button>
                      Booking now

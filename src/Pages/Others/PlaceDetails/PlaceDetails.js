@@ -1,11 +1,16 @@
 import React from "react";
+
 import { Link, useLoaderData } from "react-router-dom";
+import useTitle from './../../../hooks/useTitle';
 
 const PlaceDetails = () => {
    const { id, name, details } = useLoaderData();
+      useTitle(name) 
    return (
       <div className="flex items-center justify-center w-full h-screen  herobg">
          <div className="flex w-4/5 items-center justify-between">
+          
+          
             <div className="w-2/5 space-y-3">
                <h4 className="text-4xl md:text-7xl text-center text-white">{name}</h4>
                <p className="text-justify text-base text-white">{details}</p>

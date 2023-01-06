@@ -5,6 +5,7 @@ import {FaFacebook,  FaGithub} from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import toast from 'react-hot-toast';
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -91,6 +92,9 @@ const Login = () => {
    return (
       <div className='w-100  flex items-center justify-center herobg h-auto'style={{minHeight: "100vh"}}>
         <div className='w-1/3 my-24 '>
+         <Helmet>
+            <title>Sign In - Traveling Bangladesh</title>
+         </Helmet>
         <form onSubmit={handleSubmit} className=' space-y-4  h-auto border border-slate-600 rounded-md p-5 shadow-gray-500 shadow-sm bg-white'>
         <h3 className='text-3xl font-extrabold form-header'>login</h3>
             <div className='flex flex-col '>
